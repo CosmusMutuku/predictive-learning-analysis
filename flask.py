@@ -7,6 +7,7 @@ import pandas as pd  # For data preprocessing
 app = Flask(__name__)
 
 # Load the trained machine learning model
+
 model = joblib.load("your_trained_model.pkl")  # Replace with your model file
 
 @app.route("/", methods=["GET", "POST"])
